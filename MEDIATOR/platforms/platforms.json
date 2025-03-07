@@ -1,0 +1,21 @@
+{
+    "platforms": [
+      {
+        "name": "YFX",
+        "image": "https://example.com/images/yfx-logo.png"
+      },
+      {
+        "name": "HLB",
+        "image": "https://example.com/images/hlb-logo.png"
+      },
+      {
+        "name": "factorial",
+        "image": "https://example.com/images/otherplatform-logo.png"
+      },
+      {
+        "name": "sesame",
+        "image": "https://example.com/images/otherplatform-logo.png"
+      }
+    ]
+  }
+  

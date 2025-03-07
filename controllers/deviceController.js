@@ -21,7 +21,7 @@ exports.deleteDevice = async (req, res) => {
 
 exports.handleDeviceStatus =  async (req, res) => {
 try{
-const updatedDevice = await handleDeviceStatus(req.params.id);
+const updatedDevice = await handleDeviceStatus(req.body);
 res.status(200).json(updatedDevice);
 }catch(err){
   res.status(500).json({ error: 'ERROR AL ACTUALIZAR' });
@@ -42,7 +42,7 @@ exports.getDevicesByOwner = async (req, res) => {
 exports.getDeviceById = async (req, res) => {
   try {
     const device = await getDeviceById(req.params.deviceId);
-    res.status(200).json({message: 'DELETED succesfuly'});
+    res.status(200).json(device);
   } catch (err) {
     res.status(500).json({ error: 'ERROR deleting device' });
   }
